@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import unittest
 from group import Group
 from application import Application
 import pytest

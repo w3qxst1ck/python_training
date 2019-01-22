@@ -33,7 +33,7 @@ class Application:
         wd.find_element_by_name("group_footer").send_keys(group.footer)
         # submit group creation
         wd.find_element_by_name("submit").click()
-        self.return_to_groups_page(wd)
+        self.return_to_groups_page()
 
     def open_groups_page(self):
         wd = self.wd

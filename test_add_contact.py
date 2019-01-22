@@ -12,9 +12,7 @@ class TestAddContact(unittest.TestCase):
     def setUp(self):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
-        self.base_url = "https://www.katalon.com/"
-        self.verificationErrors = []
-        self.accept_next_alert = True
+
 
     def test_add_contact(self):
         wd = self.wd
@@ -97,7 +95,6 @@ class TestAddContact(unittest.TestCase):
     
     def tearDown(self):
         self.wd.quit()
-        self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
     unittest.main()
